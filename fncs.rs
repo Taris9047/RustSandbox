@@ -10,7 +10,7 @@ fn abs(x: f64) -> f64 {
 }
 
 // ensuring a number is withing a range
-fn clamp(x: f64, x1: f64, x2: f64) {
+fn clamp(x: f64, x1: f64, x2: f64) -> f64 {
     if x < x1 {
         x1
     } else if x > x2 {
@@ -25,6 +25,10 @@ fn factorial(n: u64) -> u64 {
     if n == 0 {
         1
     } else {
-        n * factorial(n-1);
+        n * factorial(n-1)
     }
+}
+
+fn main() {
+
 }
