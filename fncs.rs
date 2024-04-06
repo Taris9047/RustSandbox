@@ -21,7 +21,7 @@ fn clamp(x: f64, x1: f64, x2: f64) -> f64 {
 }
 
 // Factorial
-fn factorial(n: u64) -> u64 {
+fn factorial(n: u128) -> u128 {
     if n == 0 {
         1
     } else {
@@ -30,5 +30,15 @@ fn factorial(n: u64) -> u64 {
 }
 
 fn main() {
-
+    let num = -3;
+    let mut res = abs(num as f64);
+    let min = 1;
+    let max = 3;
+    let mid = 2;
+    println!("abs {}: {}", num, res);
+    res = clamp(mid as f64, min as f64, max as f64);
+    println!("clamped {}<{}<{}: {}", min, mid, max, res);
+    let fac_num = 10;
+    let res_u = factorial(fac_num);
+    println!("factorial {} is {}", fac_num, res_u);
 }

@@ -7,4 +7,11 @@ fn main() {
 
     println!("first: {:?}", first);
     println!("last: {:?}", last);
+
+    println!("first {} {}", first.is_some(), first.is_none());
+    println!("last {} {}", last.is_some(), last.is_none());
+    println!("first value: {}", *first.unwrap());
+
+    let last_val = *slice.get(5).unwrap_or(&-1);
+    println!("last value: {}", last_val);
 }
