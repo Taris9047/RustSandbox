@@ -1,0 +1,1 @@
+A simple rust sandbox to study Rust language. Not a real project but a collection of basic examples to learn Rust language structure and features.
